@@ -9,7 +9,9 @@ using Microsoft.EntityFrameworkCore;
 
 [Route("api/admin/users")]
 [ApiController]
-[Authorize(Roles = "Admin")]
+[Authorize(Roles = "Admin")]    
+
+//Admin
 public class AdminUserController : ControllerBase
 {
     private readonly LaptopHarbourDbContext _context;
